@@ -14,6 +14,11 @@ symfony check:requirements
 ```shell
 composer install
 ```
+- Créer la base et les tables
+```shell
+php bin/console doctrine:migrations:migrate
+```
+
 - Lancer les fixtures
 ```shell
 php bin/console doctrine:fixtures:load
